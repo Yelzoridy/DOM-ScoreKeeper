@@ -9,7 +9,7 @@ const gameImg = document.querySelector('#GameImg');
 let p1Score = 0;
 let p2Score = 0;
 let endScore=4;
-let currentGame = "Pool";
+let currentGame = 0;
 
 p1btn.addEventListener('click', function (){
     if(p1Score != endScore){
