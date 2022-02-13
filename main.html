@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>I'm a DOM project to keep records in a game!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-4by3">
+                            <img  id="GameImg" src="img/pickagame.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-48x48">
+                                    <img   src="img/271817128_663664828102309_7164105941915559675_n%20(1).jpg" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                                <p class="title is-4"> Made By Yehia Elzoridy</p>
+                                <p class="subtitle is-6">Game Score Keeper.</p>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <h1> <span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                            <label for="" class="label is-inline"> Choose your Game</label>
+                            <div class="select">
+                            <select name="Choose" id="Game">
+
+                                <option value="1">Pool</option>
+                                <option value="2">Ping-Pong</option>
+                                <option value="3">Football</option>
+                            </select>
+                            </div>
+                            <label for="" class="label is-inline"> Choose your Score</label>
+                            <div class="select">
+                                <select name="" id="ScoreLimit">
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                                <option value="16">16</option>
+
+                            </select>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                        <footer class="card-footer">
+                            <button class="button is-primary card-footer-item" id="p1button"> Add 1 to player #1</button>
+                            <button class="button is-link card-footer-item " id="p2button"> Add 1 to player #2</button>
+                            <button class="button is-danger card-footer-item" id="reset">Reset Record</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="logic.js" ></script>
+</body>
+</html>
